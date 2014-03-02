@@ -9,7 +9,7 @@ var EvilVibrate = new Class({
 		switch (platform) {
 			case "android4":
 				this.image += "android.png";
-				this.sound += "Girtab.ogg";
+				this.sound += "Girtab.mp3";
 				break;
 			case "iphone":
 				this.image += "iphone.png";
