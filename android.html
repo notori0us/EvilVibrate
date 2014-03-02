@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-
-
 	<body>
+		<script type="text/javascript" src="http://mootools.net/download/get/mootools-core-1.4.5-full-nocompat.js">
+		</script>
+
+		<script type="text/javascript" src="EvilVibrate.js">
+		</script>
+
 		<script type="text/javascript">
 			navigator.vibrate = navigator.vibrate ||
 			navigator.webkitVibrate ||
@@ -11,14 +15,12 @@
 			navigator.msVibrate;
 
 			navigator.vibrate([1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500]);
-			</script>
+		</script>
 
-			<img width="100%" src="images/android.png" onclick="window.location.href='tel:15135024072';" />
-			<audio autoplay="autoplay">  
+		<img width="100%" src="images/android.png" onclick="window.location.href='tel:15135024072';" />
+		<audio autoplay="autoplay">  
 			<source src="sounds/Girtab.ogg" />
-			</audio>
-		</body>
+		</audio>
+	</body>
 
-
-
-	</html>
+</html>
