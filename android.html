@@ -14,6 +14,15 @@
 			navigator.mozVibrate ||
 			navigator.msVibrate;
 
+			var ua = navigator.userAgent.toLowerCase(); 
+			var isAndroid = ua.indexOf("android") > -1;
+			var isIphone = ua.indexOf("iphone") > -1;
+			
+			if(isAndroid)
+				alert("Hi robot");
+			if(isIphone)
+				alert("Iphone");
+
 			navigator.vibrate([1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500]);
 		</script>
 
