@@ -20,7 +20,8 @@ var EvilVibrate = new Class({
 
 
 	html: function() {
-		return '<img width="100%" src="' + this.image + '" onclick="window.location.href=\'tel:15135024072\';" />' + '<audio autoplay="autoplay">' + '<source src="' + this.sound + ' "</audio>';
+//		return '<img width="100%" src="' + this.image + '" onclick="window.location.href=\'tel:15135024072\';" />' + '<audio autoplay="autoplay">' + '<source src="' + this.sound + ' "</audio>';
+		return '<img width="100%" src="' + this.image + '" onclick="window.location.href=\'images/catwalking.gif\';" />' + '<audio autoplay="autoplay">' + '<source src="' + this.sound + ' "</audio>';
 
 	}
 });
