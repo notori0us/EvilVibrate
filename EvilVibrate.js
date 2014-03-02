@@ -9,11 +9,15 @@ var EvilVibrate = new Class({
 		switch (platform) {
 			case "android4":
 				this.image += "android.png";
-				this.sound += "Girtab.ogg.";
-			break;
+				this.sound += "Girtab.ogg";
+				break;
+			case "iphone":
+				this.image += "iphone.png";
+				this.sound += "marimba.mp3";
+				break;
 		}
 	},
-	
+
 
 	html: function() {
 		return '<img width="100%" src="' + this.image + '" onclick="window.location.href=\'tel:15135024072\';" />' + '<audio autoplay="autoplay">' + '<source src="' + this.sound + ' "</audio>';
@@ -21,4 +25,9 @@ var EvilVibrate = new Class({
 	}
 });
 
-test = new EvilVibrate("android4");
+navigator.vibrate = navigator.vibrate ||
+navigator.webkitVibrate ||
+navigator.mozVibrate ||
+navigator.msVibrate;
+
+navigator.vibrate([1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500]);
