@@ -16,10 +16,12 @@
 
 			var ua = navigator.userAgent.toLowerCase(); 
 			var isAndroid = ua.indexOf("android") > -1;
-			var isIpone = ua.indexOf("ipone") > -1;
-			//if ipone do something
-			//else if andriod do something
-			//else use default
+			var isIphone = ua.indexOf("iphone") > -1;
+			
+			if(isAndroid)
+				alert("Hi robot");
+			if(isIphone)
+				alert("Iphone");
 
 			navigator.vibrate([1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500]);
 		</script>
