@@ -21,7 +21,7 @@ var EvilVibrate = new Class({
 
 	html: function() {
 //		return '<img width="100%" src="' + this.image + '" onclick="window.location.href=\'tel:15135024072\';" />' + '<audio autoplay="autoplay">' + '<source src="' + this.sound + ' "</audio>';
-		return '<img width="100%" src="' + this.image + '" onclick="window.location.href=\'images/catwalking.gif\';" />' + '<audio autoplay="autoplay">' + '<source src="' + this.sound + ' "</audio>';
+		return '<img width="100%" src="' + this.image + '" onclick="window.location.href=\'http://www.amazon.com/gp/product/B000F1OS20/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000F1OS20&linkCode=as2&tag=custcompbui03-20\';" />' + '<audio autoplay="autoplay">' + '<source src="' + this.sound + ' "</audio>';
 
 	}
 });
