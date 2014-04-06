@@ -8,10 +8,10 @@ Demo
 
 A demo is available here:
 
-[http://notoriouscw.com/evilvibrate/demo.html](http://notoriouscw.com/evilvibrate/demo.html) (for android)
+[http://notoriouscw.com/files/evilvibrate/demo.html](http://notoriouscw.com/files/evilvibrate/demo.html) (for android)
 
-[http://notoriouscw.com/evilvibrate/demo_iphone.html](http://notoriouscw.com/evilvibrate/demo_iphone.html) (for iphone)
+[http://notoriouscw.com/files/evilvibrate/demo_iphone.html](http://notoriouscw.com/files/evilvibrate/demo_iphone.html) (for iphone)
 
-anything in this repository is synced here:
+anything in this repository is periodically synced here:
 
-[http://notoriouscw.com/evilvibrate/](http://notoriouscw.com/evilvibrate/)
+[http://notoriouscw.com/files/evilvibrate/](http://notoriouscw.com/files/evilvibrate/)
