@@ -10,7 +10,9 @@
 
 		<script type="text/javascript">
 
-			var isWinwdows = true;
+			var isAndroid = false;
+			var isIphone = false;
+			var isWindows = true;
 
 			var vibrate;
 			
@@ -34,7 +36,7 @@
 				document.write(vibrate.html());
 			}
 			else if(isWindows) {
-				vibrate = new EvilVibrate("iphone");
+				vibrate = new EvilVibrate("winphone");
 				document.write(vibrate.html());
 			}
 			else {
