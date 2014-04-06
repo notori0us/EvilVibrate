@@ -15,6 +15,10 @@ var EvilVibrate = new Class({
 				this.image += "iphone.png";
 				this.sound += "marimba.mp3";
 				break;
+			case "winphone":
+				this.image += "windows.png";
+				this.sound += "windowsphone.mp3";
+				break;
 		}
 	},
 

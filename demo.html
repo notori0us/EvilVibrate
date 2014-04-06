@@ -14,6 +14,7 @@
 			var ua = navigator.userAgent.toLowerCase(); 
 			var isAndroid = ua.indexOf("android") > -1;
 			var isIphone = ua.indexOf("iphone") > -1;
+			var isWinwdows = ua.indexOf("winphone") > -1;
 
 			var vibrate;
 			
@@ -33,6 +34,10 @@
 
 			}
 			else if(isIphone) {
+				vibrate = new EvilVibrate("iphone");
+				document.write(vibrate.html());
+			}
+			else if(isWindows) {
 				vibrate = new EvilVibrate("iphone");
 				document.write(vibrate.html());
 			}
