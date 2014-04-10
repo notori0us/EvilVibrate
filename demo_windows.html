@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 
+<!-- 
+EvilVibrate
+
+An information security project proof of concept
+-->
+
 <html>
 	<body>
+
+		<!-- load the stylesheet for the images -->
+		<link rel=stylesheet href="style.css" type="text/css">
+
+		<!-- load mootools-core for the class to work -->
 		<script type="text/javascript" src="http://mootools.net/download/get/mootools-core-1.4.5-full-nocompat.js">
 		</script>
 
+		<!-- load evilvibrate -->
 		<script type="text/javascript" src="EvilVibrate.js">
 		</script>
 
 		<script type="text/javascript">
 
-			var isWindows = true;
-
+			// vibrate will be a new EvilVibrate
 			var vibrate;
 			
-				vibrate = new EvilVibrate("iphone");
-				vibrate.vibrate();
-				document.write(vibrate.html());
+			// WinPhone!
+			vibrate = new EvilVibrate("winphone");
+			vibrate.vibrate();
+			document.write(vibrate.html());
 
 		</script>
 

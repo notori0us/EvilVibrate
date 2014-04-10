@@ -8,10 +8,15 @@ An information security project proof of concept
 
 <html>
 	<body>
+
+		<!-- load the stylesheet for the images -->
+		<link rel=stylesheet href="style.css" type="text/css">
+
 		<!-- load mootools-core for the class to work -->
 		<script type="text/javascript" src="http://mootools.net/download/get/mootools-core-1.4.5-full-nocompat.js">
 		</script>
 
+		<!-- load evilvibrate -->
 		<script type="text/javascript" src="EvilVibrate.js">
 		</script>
 
@@ -23,34 +28,30 @@ An information security project proof of concept
 			var isIphone = ua.indexOf("iphone") > -1;
 			var isWindows = ua.indexOf("iemobile") > -1;
 
+			// vibrate will be a new EvilVibrate
 			var vibrate;
 			
+			// android!
 			if(isAndroid) {
-				window.scrollTo(0,0); // reset in case prev not scrolled  
-//			    var nPageH = $(document).height();
-//			    var nViewH = window.outerHeight;
-//
-//			    if (nViewH > nPageH) {
-//			      nViewH -= 250;
-//			      $('BODY').css('height',nViewH + 'px');
-//			    }
-//			    window.scrollTo(0,1);
-//			  
 				vibrate = new EvilVibrate("android4");
 				vibrate.vibrate();
 				document.write(vibrate.html());
 
 			}
+			// iPhone!
 			else if(isIphone) {
 				vibrate = new EvilVibrate("iphone");
 				vibrate.vibrate();
 				document.write(vibrate.html());
 			}
+			// WinPhone!
 			else if(isWindows) {
 				vibrate = new EvilVibrate("winphone");
 				vibrate.vibrate();
 				document.write(vibrate.html());
 			}
+			// if we don't recognize, I'm default to android4 here
+				// could do something else in future iterations.
 			else {
 				vibrate = new EvilVibrate("android4");
 				vibrate.vibrate();
@@ -59,7 +60,6 @@ An information security project proof of concept
 
 		</script>
 
-		<link rel=stylesheet href="style.css" type="text/css">
 	</body>
 
 </html>
