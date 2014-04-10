@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>EvilVibrate</title>
+		<style>
+			.caption{font-size:66%;text-align:right;}
+			.figure{float:right;padding-bottom:1em;padding-left:1em;}
+			.footnotes{font-size:80%;}
+			a:hover{text-shadow: 0 0 5px;}
+			body{font-family:sans-serif;max-width:100ex;padding-left:5em;}
+			code{font-family:Consolas, Inconsolata, Monaco, monospace;font-size:95%;}
+			p{text-align:justify;}
+		</style>
+	</head>
+
+	<body>
+		<h1>Evil Vibrate</h1>
+		<h2><i>An information security proof of concept</i></h2>
+		<hr>
+		<h4>A note on Web Standards</h4>
+		<p>The web, as it stands in it's current form, is quite the hot mess.
+		The integral part of this project, which was to test the HTML5
+		Vibrate API and it's effect on social engineering attacks, broke down
+		and simply would not work as they were unsupported on that platform at
+		the time of testing.</p>
+		<p>The goal with implementing what we did (with white box testing),
+		however, was to create a platform that was ready for when these
+		standards become available to developers on their respective
+		platforms.</p>
+
+		<h4>A note on Social Engineering</h4>
+		<p>The central goal of this project was to see the effect of a
+		legitimate looking phone call (even if it was run in the browser) on
+		everyday users. To achieve this, we used people in our age group that
+		<i>relatively</i> reflected the general population.</p>
+
+		<h5>Testing it on Friends</h5>
+		<p>When putting the link to our application in a non-obvious
+		application, we found the general user to be surprised, and in such a
+		way to where we had a 76% success rate. This usually consisted of a
+		user, first surprised, trying to hush or 'ignore' the call quickly,
+		clicking on our link.</p>
+
+		<p>In the future, improvement iterations can be made each with a stage
+		for general user testing, assuming there is a pool of individuals that
+		is untested.</p>
+
+		<h4>Challenges</h4>
+
+		<h5>Development Environment</h5>
+		<p>While static web pages running Javascript seem simple in nature, we
+		did not have much experience in these environments. So, when it came
+		time to do development, we ran into a lot of impediments as members
+		learned the web technologies used.</p>
+		<p>While version control systems, especially distributed ones, offer
+		many advantages over other forms of sharing code bases, they can cause
+		issues when individual group members are not familiar with the
+		technology. This was the case when learning git.</p>
+
+		<h5>Compatibility</h5>
+		<p>Initially, we ran into challenges using the HTML5 vibrate API, and
+		had to manually test out each individual device and browser
+		compatibility, which lead to iterations taking a fairly reasonable
+		amount of time. To alleviate some of this, we made a user agent test
+		page that returned the user agent of whoever visited, so we could
+		easily tell browsers apart. Again, this was time consuming and could
+		not be easily <i>scripted,</i> or automated.</p>
+
+	</body>
+
+</html>

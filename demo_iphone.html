@@ -17,18 +17,9 @@
 
 			var vibrate;
 			
-			if(isAndroid) {
-				vibrate = new EvilVibrate("android4");
-				document.write(vibrate.html());
-			}
-			else if(isIphone) {
 				vibrate = new EvilVibrate("iphone");
+				vibrate.vibrate();
 				document.write(vibrate.html());
-			}
-			else {
-				vibrate = new EvilVibrate("iphone");
-				document.write(vibrate.html());
-			}
 
 		</script>
 
