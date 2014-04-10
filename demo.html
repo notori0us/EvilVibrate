@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 
+<!-- 
+EvilVibrate
+
+An information security project proof of concept
+-->
+
 <html>
 	<body>
+		<!-- load mootools-core for the class to work -->
 		<script type="text/javascript" src="http://mootools.net/download/get/mootools-core-1.4.5-full-nocompat.js">
 		</script>
 
@@ -14,7 +21,7 @@
 			var ua = navigator.userAgent.toLowerCase(); 
 			var isAndroid = ua.indexOf("android") > -1;
 			var isIphone = ua.indexOf("iphone") > -1;
-			var isWinwdows = ua.indexOf("winphone") > -1;
+			var isWindows = ua.indexOf("iemobile") > -1;
 
 			var vibrate;
 			
@@ -30,24 +37,29 @@
 			    window.scrollTo(0,1);
 			  
 				vibrate = new EvilVibrate("android4");
+				vibrate.vibrate();
 				document.write(vibrate.html());
 
 			}
 			else if(isIphone) {
 				vibrate = new EvilVibrate("iphone");
+				vibrate.vibrate();
 				document.write(vibrate.html());
 			}
 			else if(isWindows) {
-				vibrate = new EvilVibrate("iphone");
+				vibrate = new EvilVibrate("winPhone");
+				vibrate.vibrate();
 				document.write(vibrate.html());
 			}
 			else {
 				vibrate = new EvilVibrate("android4");
+				vibrate.vibrate();
 				document.write(vibrate.html());
 			}
 
 		</script>
 
+		<link rel=stylesheet href="style.css" type="text/css">
 	</body>
 
 </html>
